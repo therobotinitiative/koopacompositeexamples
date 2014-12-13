@@ -6,6 +6,8 @@ import com.orbital3dstudios.composite.koopa.family.koopa.GoombaComponent;
 import com.orbital3dstudios.composite.koopa.family.koopa.HammerBroComponent;
 import com.orbital3dstudios.composite.koopa.family.koopa.Koopa;
 import com.orbital3dstudios.composite.koopa.family.koopa.KoopaTroopa;
+import com.orbital3dstudios.composite.koopa.family.msuhroomkingdom.LuigiComponent;
+import com.orbital3dstudios.composite.koopa.family.msuhroomkingdom.MarioComponent;
 
 public class KoopaExample
 {
@@ -42,5 +44,13 @@ public class KoopaExample
 		hb.add((Koopa) new KoopaTroopa());
 		hb.add((Koopa) new KoopaTroopa());
 		hb.add((Koopa) new KoopaTroopa());
+	}
+
+	public void familyMixUpProtection()
+	{
+		BowserComponent bowser = new BowserComponent();
+		bowser.add(new MarioComponent());
+		CutiePieComponent cpc = new CutiePieComponent();
+		cpc.put(KoopaTroopa.class, new LuigiComponent());
 	}
 }

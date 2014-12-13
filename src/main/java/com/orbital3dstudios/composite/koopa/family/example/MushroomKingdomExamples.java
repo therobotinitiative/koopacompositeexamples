@@ -3,6 +3,7 @@ package com.orbital3dstudios.composite.koopa.family.example;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.orbital3dstudios.composite.koopa.family.koopa.KoopaTroopa;
 import com.orbital3dstudios.composite.koopa.family.msuhroomkingdom.LuigiComponent;
 import com.orbital3dstudios.composite.koopa.family.msuhroomkingdom.MarioComponent;
 import com.orbital3dstudios.composite.koopa.family.msuhroomkingdom.MushroomKingdom;
@@ -42,5 +43,15 @@ public class MushroomKingdomExamples
 		s.add(s);
 		// Composite pattern allows this, but there probably is not use case for
 		// this or maybe there is some.
+	}
+
+	public void familyMixupProtection()
+	{
+		LuigiComponent luigi = new LuigiComponent();
+		KoopaTroopa kt = new KoopaTroopa();
+		luigi.add(kt);
+		// This can happen, but on that case you should take a deep look at the
+		// mirror
+		luigi.add((MushroomKingdom) kt);
 	}
 }
