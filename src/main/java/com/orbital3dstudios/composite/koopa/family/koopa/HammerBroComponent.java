@@ -1,8 +1,8 @@
 package com.orbital3dstudios.composite.koopa.family.koopa;
 
-import com.orbital3dstudios.composite.koopa.implementation.AbstractSetComposite;
+import com.orbital3dstudios.composite.koopa.implementation.AbstractSetComponent;
 
-public class HammerBroComponent extends AbstractSetComposite<Koopa> implements Koopa
+public class HammerBroComponent extends AbstractSetComponent<Koopa> implements Koopa
 {
 	public void throwHammer()
 	{

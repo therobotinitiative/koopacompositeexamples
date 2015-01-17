@@ -1,6 +1,6 @@
 package com.orbital3dstudios.composite.koopa.family.msuhroomkingdom;
 
-import com.orbital3dstudios.composite.koopa.implementation.AbstractMultiMapComposite;
+import com.orbital3dstudios.composite.koopa.implementation.AbstractMultiMapComponent;
 
 /**
  * Since the princess is a female we can make the assumption that she is
@@ -15,7 +15,7 @@ import com.orbital3dstudios.composite.koopa.implementation.AbstractMultiMapCompo
  * @author Mikko Sirén
  * 
  */
-public class PrincessPeachComponent extends AbstractMultiMapComposite<MushroomKingdom> implements MushroomKingdom
+public class PrincessPeachComponent extends AbstractMultiMapComponent<MushroomKingdom> implements MushroomKingdom
 {
 	public void jump()
 	{

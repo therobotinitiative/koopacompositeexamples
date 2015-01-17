@@ -1,8 +1,8 @@
 package com.orbital3dstudios.composite.koopa.family.koopa;
 
-import com.orbital3dstudios.composite.koopa.implementation.AbstractListCompositeComponent;
+import com.orbital3dstudios.composite.koopa.implementation.AbstractListCompnent;
 
-public class BowserComponent extends AbstractListCompositeComponent<Koopa> implements Koopa
+public class BowserComponent extends AbstractListCompnent<Koopa> implements Koopa
 {
 	public void jumpAndRumble()
 	{

@@ -1,8 +1,8 @@
 package com.orbital3dstudios.composite.koopa.family.koopa;
 
-import com.orbital3dstudios.composite.koopa.implementation.AbstractMapComposite;
+import com.orbital3dstudios.composite.koopa.implementation.AbstractMapComponent;
 
-public class CutiePieComponent extends AbstractMapComposite<Koopa> implements Koopa
+public class CutiePieComponent extends AbstractMapComponent<Koopa> implements Koopa
 {
 	public void doSomethingEvil()
 	{

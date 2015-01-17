@@ -1,6 +1,6 @@
 package com.orbital3dstudios.composite.koopa.family.msuhroomkingdom;
 
-import com.orbital3dstudios.composite.koopa.implementation.AbstractSetComposite;
+import com.orbital3dstudios.composite.koopa.implementation.AbstractSetComponent;
 
 /**
  * Example of LuigiComponent that can have child components from the mushroom
@@ -12,7 +12,7 @@ import com.orbital3dstudios.composite.koopa.implementation.AbstractSetComposite;
  * @author Mikko Sirén
  * 
  */
-public class LuigiComponent extends AbstractSetComposite<MushroomKingdom> implements MushroomKingdom
+public class LuigiComponent extends AbstractSetComponent<MushroomKingdom> implements MushroomKingdom
 {
 	public void jump()
 	{
